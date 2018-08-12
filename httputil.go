@@ -15,7 +15,7 @@ const (
 )
 
 //ErrorRequestBodyTooLarge is returned when a requests body has an unsupported size.
-var ErrorRequestBodyTooLarge = errors.New("Request body too garge")
+var ErrorRequestBodyTooLarge = errors.New("Request body too large")
 
 //SendError is used for sending an error message and accompanying status code.
 func SendError(w http.ResponseWriter, message string, statusCode int) (int, error) {
